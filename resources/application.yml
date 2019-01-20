@@ -1,0 +1,18 @@
+server:
+  port: 9081
+  
+keycloak:
+  endpoints:
+    oauth_idp_url: http://localhost:8080/auth/realms/{realm}/protocol/openid-connect/auth
+    redirect_uri:  http://localhost:9081/v1/auth/realms/{realm}/{client_id}/login-redirect
+    keycloak_auth_url: http://localhost:8080/auth
+    home_url: http://localhost:9081/v1/auth/realms/{realm}/home
+    token_url: http://localhost:8080/auth/realms/{realm}/protocol/openid-connect/token
+    user_info_url: http://localhost:8080/auth/realms/{realm}/protocol/openid-connect/userinfo
+    logout_url: http://localhost:8080/auth/realms/{realm}/protocol/openid-connect/logout
+    index: http://localhost:9081/v1/auth/realms/{realm}/
+  config:
+    idp_demo: client_secret
+    session_management: client_secret
+    user-management: client_secret
+    

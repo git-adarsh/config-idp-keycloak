@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<p th:text="'Hi, ' + ${username}" />
+   <p> "Your login is successful!"</p>
+   
+   <a href="http://localhost:9081/v1/auth/realms/DemoRealm/idp_demo/logout">Logout</a>
+</body>
+</html>

@@ -15,7 +15,7 @@
   in the query parameter <code>kc_idp_hint</code>.
   </li>
   <li>
-  Just pull or clone the project and maven-run the project. It' ready!
+  Just pull or clone the project and maven-run the project.
   </li>
   
 </ol>
